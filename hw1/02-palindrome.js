@@ -45,20 +45,20 @@ const palindrome = () => {
     if (app) {
       const reset = document.createElement("div");
       reset.innerHTML = `Invalid input. Please enter a number`;
-      reset.style.color = "red";
+      reset.classList.add("text-danger");
       reset.setAttribute("id", "result");
       app.appendChild(reset);
       return;
     }
   }
   // Check if the number is a palindrome
-  for (let i = 0; i < len / 2; i++) {
+  for (let i = 0; i < len / 2; i = i + 1) {
     if (value[i] !== value[len - 1 - i]) {
       let app = document.querySelector(".result-div");
       if (app) {
         const reset = document.createElement("div");
         reset.innerHTML = `No. Try again`;
-        reset.style.color = "red";
+        reset.classList.add("text-danger");
         reset.setAttribute("id", "result");
         app.appendChild(reset);
       }
@@ -70,7 +70,7 @@ const palindrome = () => {
   let app = document.querySelector(".result-div");
   const reset = document.createElement("div");
   reset.innerHTML = `Yes. This is a palindrome!`;
-  reset.style.color = "green";
+  reset.classList.add("text-success");
   reset.setAttribute("id", "result");
   app.appendChild(reset);
   return;

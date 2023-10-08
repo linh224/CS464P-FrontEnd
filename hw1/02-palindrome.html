@@ -12,23 +12,18 @@
   </head>
   <body class="bg-primary">
     <main>
-      <section>
-        <form
-          onsubmit="return false;"
-          class="bg-light border rounded w-50 mx-auto mt-5 p-3"
-        >
-          <h1>Exercise 02 - Palindrome</h1>
-          <div class="form-group w-50">
-            <label for="number">Enter a positive number:</label>
-            <input type="number" id="number" name="number" min="1" />
+      <section class="bg-light border rounded w-50 mx-auto mt-5 p-3">
+        <h1>Exercise 02 - Palindrome</h1>
+        <div class="form-group w-50">
+          <label for="number">Enter a positive number:</label>
+          <input type="number" id="number" name="number" min="1" />
+        </div>
+        <div class="form-group">
+          <p>Is this a palindrome?</p>
+          <div class="result-div">
+            <div id="result"></div>
           </div>
-          <div class="form-group">
-            <span>Is this a palindrome?</span>
-            <div class="result-div">
-              <div id="result"></div>
-            </div>
-          </div>
-        </form>
+        </div>
       </section>
     </main>
   </body>
