@@ -1,4 +1,4 @@
-// Add your code here
+// Add your code here.
 let form = document.querySelector("form");
 
 const handleSubmit = function handleSubmitFunction(event) {

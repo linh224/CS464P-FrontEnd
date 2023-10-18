@@ -1,4 +1,4 @@
-// Add your code here
+// Add your code here.
 const inputWord = document.getElementById("userinput");
 const contentParagraph = document.getElementById("intro").innerHTML;
 

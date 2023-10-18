@@ -1,4 +1,4 @@
-// Add your code here
+// Add your code here.
 const randomBackground = function randomBackgroundFunction() {
   let x = Math.ceil(Math.random() * 256);
   let y = Math.ceil(Math.random() * 256);
