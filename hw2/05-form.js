@@ -1,7 +1,7 @@
 // Add your code here
 let form = document.querySelector("form");
 
-const handleSubmit = function handleSubmitFunction(event) {
+const handleSubmit = function submitFormAndPrint(event) {
   let name = document.querySelector("#name");
   let email = document.querySelector("#email");
   let registration = document.querySelector("#class-select option:checked");

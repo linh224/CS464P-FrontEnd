@@ -2,7 +2,7 @@
 const inputWord = document.getElementById("userinput");
 const contentParagraph = document.getElementById("intro").innerHTML;
 
-const search = function searchFunction(event) {
+const search = function findWordAndHighlight(event) {
   resetSearch();
   let searched = document.getElementById("userinput").value.trim();
   if (searched !== "") {
@@ -16,7 +16,7 @@ const search = function searchFunction(event) {
   }
 };
 
-const resetSearch = function resetSearchFunction(event) {
+const resetSearch = function resetParagraph(event) {
   const text = document.getElementById("intro");
   text.remove();
   let app = document.querySelector(".paragraph");

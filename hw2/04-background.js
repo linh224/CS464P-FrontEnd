@@ -1,5 +1,5 @@
 // Add your code here
-const randomBackground = function randomBackgroundFunction() {
+const randomBackground = function createRandomBackground() {
   let x = Math.ceil(Math.random() * 256);
   let y = Math.ceil(Math.random() * 256);
   let z = Math.ceil(Math.random() * 256);
@@ -9,7 +9,7 @@ const randomBackground = function randomBackgroundFunction() {
 
 let intervalId;
 
-const changeBackground = function changeBackgroundFunction() {
+const changeBackground = function changeBackgroundColor() {
   let myInputValue = parseInt(document.getElementById("interval").value);
   let button = document.getElementById("btn");
   let buttonText = button.innerText;
