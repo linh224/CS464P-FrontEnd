@@ -13,10 +13,8 @@
 11. grid-column: 2/5;
 12. grid-row-start: 3;
 13. grid-row: 3/6;
-14. grid-column: 2;
-    grid-row: 5;
-15. grid-column: 2/6;
-    grid-row: 1/6;
+14. grid-column: 2; grid-row: 5;
+15. grid-column: 2/6; grid-row: 1/6;
 16. grid-area: 1/2/4/6;
 17. grid-area: 2/3/5/6;
 18. order: 1;

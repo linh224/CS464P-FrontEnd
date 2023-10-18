@@ -31,3 +31,4 @@ inputWord.addEventListener("keyup", function (event) {
     search();
   }
 });
+
