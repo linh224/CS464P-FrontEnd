@@ -34,6 +34,7 @@ const handleSubmit = function handleSubmitFunction(event) {
   }
 
   console.groupEnd();
+  form.reset();
   event.preventDefault();
 };
 
