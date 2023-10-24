@@ -1,10 +1,11 @@
-// Add your code here
+// Add your code here.
 const randomBackground = function randomBackgroundFunction() {
   let x = Math.ceil(Math.random() * 256);
   let y = Math.ceil(Math.random() * 256);
   let z = Math.ceil(Math.random() * 256);
-  let bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  document.body.style.background = bgColor;
+  let alpha = Math.random() * (1 - 0.1) + 0.1;
+  let bgColorRgba = `rgba(${x},${y},${z},${alpha})`;
+  document.body.style.background = bgColorRgba;
 };
 
 let intervalId;

@@ -1,4 +1,6 @@
-// Add your code here
+
+
+// Add your code here.
 let form = document.querySelector("form");
 
 const handleSubmit = function handleSubmitFunction(event) {
@@ -32,6 +34,7 @@ const handleSubmit = function handleSubmitFunction(event) {
   }
 
   console.groupEnd();
+  form.reset();
   event.preventDefault();
 };
 
