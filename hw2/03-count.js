@@ -10,7 +10,7 @@ const search = function searchHighlightWord(event) {
     let re = new RegExp("\\b" + searched + "\\b", "g");
     let newText = text.replace(
       re,
-      `<a class="highlight" style="background:yellow; text-decoration:none;">${searched}</a>`
+      `<span class="highlight">${searched}</span>`
     );
     document.getElementById("intro").innerHTML = newText;
   }
@@ -20,10 +20,10 @@ const resetSearch = function resetContent(event) {
   const text = document.getElementById("intro");
   text.remove();
   let app = document.querySelector(".paragraph");
-  const resetpara = document.createElement("div");
-  resetpara.innerHTML = `${contentParagraph}`;
-  resetpara.setAttribute("id", "intro");
-  app.appendChild(resetpara);
+  const resetPara = document.createElement("div");
+  resetPara.innerHTML = `${contentParagraph}`;
+  resetPara.setAttribute("id", "intro");
+  app.appendChild(resetPara);
 };
 
 inputWord.addEventListener("keyup", function (event) {
