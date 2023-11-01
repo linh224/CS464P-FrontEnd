@@ -1,0 +1,15 @@
+.navbar a {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.navbar a:hover {
+  color: pink;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(141, 220, 220);
+}
