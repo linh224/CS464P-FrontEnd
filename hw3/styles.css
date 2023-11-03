@@ -12,8 +12,3 @@ body {
 h1 {
   text-align: center;
 }
-
-.donut-chart {
-  border-radius: 0.8rem;
-  background-color: var(--white);
-}

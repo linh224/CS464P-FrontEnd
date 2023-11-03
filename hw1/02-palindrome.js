@@ -45,20 +45,20 @@ const palindrome = () => {
     if (app) {
       const reset = document.createElement("div");
       reset.innerHTML = `Invalid input. Please enter a number`;
-      reset.classList.add("text-danger");
+      reset.style.color = "red";
       reset.setAttribute("id", "result");
       app.appendChild(reset);
       return;
     }
   }
   // Check if the number is a palindrome
-  for (let i = 0; i < len / 2; i = i + 1) {
+  for (let i = 0; i < len / 2; i++) {
     if (value[i] !== value[len - 1 - i]) {
       let app = document.querySelector(".result-div");
       if (app) {
         const reset = document.createElement("div");
         reset.innerHTML = `No. Try again`;
-        reset.classList.add("text-danger");
+        reset.style.color = "red";
         reset.setAttribute("id", "result");
         app.appendChild(reset);
       }
@@ -70,15 +70,25 @@ const palindrome = () => {
   let app = document.querySelector(".result-div");
   const reset = document.createElement("div");
   reset.innerHTML = `Yes. This is a palindrome!`;
-  reset.classList.add("text-success");
+  reset.style.color = "green";
   reset.setAttribute("id", "result");
   app.appendChild(reset);
   return;
 };
 
-//An event listener for the 'keyup' event has been added to the 'numberInput' element.
-numberInput.addEventListener("keyup", (event) => {
-  if (numberInput) {
+/**
+ * Function to handle key up event
+ * @param {Event} e - The event object
+ */
+const handleKeyUp = (e) => {
+  e.preventDefault();
+  if (e.keyCode === 13) {
     palindrome();
   }
-});
+};
+
+// Add an event listener for key up events on numberInput
+// Only if numberInput is found
+if (numberInput) {
+  numberInput.addEventListener("keyup", handleKeyUp);
+}
