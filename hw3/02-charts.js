@@ -43,7 +43,7 @@ const borderColors = [
 // URL to Game of Thrones API to fetch all characters
 const url = "https://thronesapi.com/api/v2/Characters";
 
-const findOcc = (charactersArr) => {
+const findOcc = function findFamilyNameOccurance (charactersArr) {
   let familyArr = [];
 
   charactersArr.forEach((element) => {
@@ -125,7 +125,7 @@ const fetchData = (url) => {
           dataArr.push(result.occurrence);
         }
       });
-
+  
       renderChart(labelArr, dataArr);
     })
     .catch((error) => {
